@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Celso Roberto Espinoza Arce — Technical Lead</title>
+  <title>Celso Roberto Espinoza Arce — Technical Lead &amp; Backend Development</title>
 
   <!-- SEO -->
-  <meta name="description" content="Celso Roberto Espinoza Arce — Technical Lead based in Lima, Peru. Specialist in TypeScript, NestJS, and AWS. 7+ years building scalable backend systems." />
+  <meta name="description" content="Celso Roberto Espinoza Arce — Backend Technical Lead based in Lima, Peru. 8+ years building event-driven, microservice backends with TypeScript, NestJS, GraphQL, and AWS." />
   <meta name="author" content="Celso Roberto Espinoza Arce" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://celsoespinoza.com" />
@@ -14,14 +14,14 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://celsoespinoza.com" />
-  <meta property="og:title" content="Celso Roberto Espinoza Arce — Technical Lead" />
-  <meta property="og:description" content="Technical Lead based in Lima, Peru. Specialist in TypeScript, NestJS, and AWS. 7+ years building scalable backend systems." />
+  <meta property="og:title" content="Celso Roberto Espinoza Arce — Technical Lead &amp; Backend Development" />
+  <meta property="og:description" content="Backend Tech Lead in Lima, Peru. 8+ years building event-driven, microservice backends with TypeScript, NestJS, GraphQL, and AWS." />
   <meta property="og:site_name" content="celsoespinoza.com" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Celso Roberto Espinoza Arce — Technical Lead" />
-  <meta name="twitter:description" content="Technical Lead based in Lima, Peru. Specialist in TypeScript, NestJS, and AWS." />
+  <meta name="twitter:title" content="Celso Roberto Espinoza Arce — Technical Lead &amp; Backend Development" />
+  <meta name="twitter:description" content="Backend Tech Lead in Lima, Peru. TypeScript, NestJS, GraphQL, event-driven architecture, AWS." />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -430,6 +430,28 @@
     }
     .exp-description p { margin-bottom: 6px; }
     .exp-description p:last-child { margin-bottom: 0; }
+    .exp-bullets {
+      list-style: none;
+      margin: 10px 0 0 0;
+      padding: 0;
+    }
+    .exp-bullets li {
+      position: relative;
+      padding-left: 18px;
+      margin-bottom: 6px;
+    }
+    .exp-bullets li:last-child { margin-bottom: 0; }
+    .exp-bullets li::before {
+      content: '';
+      position: absolute;
+      left: 2px;
+      top: 0.62em;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--gold);
+      opacity: 0.55;
+    }
 
     /* ============================================================
        TECH BADGES
@@ -763,9 +785,10 @@
       <p class="hero-label">Lima, Peru</p>
       <h1>Celso Roberto<br/><span>Espinoza Arce</span></h1>
       <p class="hero-sub">
-        Technical Lead with 7+ years building scalable backend systems.
-        Specializing in TypeScript, NestJS, and cloud-native architectures on AWS —
-        currently leading engineering at Yape, Peru's largest fintech.
+        Backend Tech Lead with 8+ years building and scaling backend systems &mdash;
+        most recently leading event-driven and plugin-based architectures on NestJS/GraphQL
+        at Yape (BCP), Peru's largest fintech. Strong background in microservices, third-party
+        integrations, and cross-functional technical leadership.
       </p>
       <div class="hero-actions">
         <a href="CV.pdf" target="_blank" rel="noopener" class="btn-primary">
@@ -776,7 +799,7 @@
       </div>
       <div class="hero-meta">
         <div class="hero-stat">
-          <strong>7+</strong>
+          <strong>8+</strong>
           <span>Years Experience</span>
         </div>
         <div class="hero-stat">
@@ -788,8 +811,8 @@
           <span>Current Role</span>
         </div>
         <div class="hero-stat">
-          <strong>B2</strong>
-          <span>English Certified</span>
+          <strong>BSc</strong>
+          <span>CS in Progress</span>
         </div>
       </div>
     </div>
@@ -823,17 +846,25 @@
                   <span class="exp-location">Lima, Peru</span>
                 </div>
               </div>
-              <div class="exp-period">Jan 2024 — Present · 2 yrs 3 mos</div>
+              <div class="exp-period">Jan 2024 — Aug 2026 · 2 yrs 8 mos</div>
             </div>
             <div class="exp-description">
-              <p>Leading backend engineering teams at Peru's largest mobile payment platform. Driving technical strategy, architecture decisions, and engineering excellence across multiple product squads.</p>
+              <p>Leading backend engineering at Peru's largest mobile payment platform &mdash; driving architecture decisions, integrations, and engineering standards across product squads.</p>
+              <ul class="exp-bullets">
+                <li>Designed an event-driven workflow for the promotions catalogue that automated stock-depletion handling.</li>
+                <li>Led the migration of a NestJS/GraphQL BFF to a plugin-based architecture, improving modularity across the product.</li>
+                <li>Owned the partner-facing integration for Yape Buses, built on an internal framework for embedding external web experiences within Yape, ensuring secure data handling and robust technical documentation.</li>
+              </ul>
             </div>
             <div class="tech-stack" aria-label="Technologies used">
               <span class="badge">TypeScript</span>
               <span class="badge">NestJS</span>
+              <span class="badge">GraphQL</span>
+              <span class="badge">Event-Driven</span>
               <span class="badge badge-secondary">Kafka</span>
               <span class="badge badge-secondary">PostgreSQL</span>
               <span class="badge badge-secondary">Grafana</span>
+              <span class="badge badge-secondary">Datadog</span>
             </div>
 
             <div class="exp-subrole">
@@ -844,7 +875,12 @@
                 <div class="exp-period">Jun 2023 — Jan 2024 · 8 mos</div>
               </div>
               <div class="exp-description" style="margin-top:10px;">
-                <p>Backend development contributing to Yape's core services infrastructure, building reliable APIs and data pipelines at scale.</p>
+                <p>Backend development on Yape's promotions product, building reliable services at scale.</p>
+                <ul class="exp-bullets">
+                  <li>Developed a location-based promotions filter connecting users with nearby stores via a headless CMS.</li>
+                  <li>Maintained and enhanced the promotions product using NestJS, GraphQL, and PostgreSQL backend services.</li>
+                  <li>Collaborated with cross-functional teams to ensure seamless integration and functionality of the promotions system.</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -860,13 +896,17 @@
                 <div class="exp-company">
                   Lean Tech
                   <span class="exp-company-dot" aria-hidden="true"></span>
-                  <span class="exp-location">Lima, Peru</span>
+                  <span class="exp-location">Remote</span>
                 </div>
               </div>
               <div class="exp-period">May 2022 — Jun 2023 · 1 yr 2 mos</div>
             </div>
             <div class="exp-description">
-              <p>Active participation in Node.js project development with a strong focus on engineering best practices. Contributed to onboarding programs for new team members, establishing clear development standards. Improved project architecture for scalability and alignment with modern standards.</p>
+              <p>Backend application development with a strong focus on engineering best practices.</p>
+              <ul class="exp-bullets">
+                <li>Contributed to backend application development and supported new-hire onboarding on internal standards.</li>
+                <li>Improved project architecture to meet scalability requirements and modern engineering standards.</li>
+              </ul>
             </div>
             <div class="tech-stack" aria-label="Technologies used">
               <span class="badge">Node.js</span>
@@ -887,13 +927,17 @@
                 <div class="exp-company">
                   Rappi
                   <span class="exp-company-dot" aria-hidden="true"></span>
-                  <span class="exp-location">Peru (Remote)</span>
+                  <span class="exp-location">Peru &middot; Fraud-Ops Team</span>
                 </div>
               </div>
               <div class="exp-period">Apr 2021 — May 2022 · 1 yr 2 mos</div>
             </div>
             <div class="exp-description">
-              <p>Backend developer on the Fraud-Ops team, responsible for maintaining and implementing new features for the fraud backoffice web platform. Operated within a microservices architecture handling high-volume transaction data.</p>
+              <p>Backend developer on the Fraud-Ops team, working within a microservices architecture handling high-volume transaction data.</p>
+              <ul class="exp-bullets">
+                <li>Maintained and extended the Fraud vertical's web backoffice platform using Kotlin, Vert.x, RxJava, PostgreSQL, and Kafka, with AWS SQS and DynamoDB.</li>
+                <li>Ensured code quality with Mockito and SonarQube; ran CI/CD with Jenkins and monitored via SignalFx and LogDNA.</li>
+              </ul>
             </div>
             <div class="tech-stack" aria-label="Technologies used">
               <span class="badge">Kotlin</span>
@@ -918,7 +962,7 @@
           <div class="exp-card">
             <div class="exp-header">
               <div>
-                <div class="exp-role">Product Development Lead</div>
+                <div class="exp-role">Product Development Team Leader</div>
                 <div class="exp-company">
                   APPRUNN
                   <span class="exp-company-dot" aria-hidden="true"></span>
@@ -928,7 +972,11 @@
               <div class="exp-period">Oct 2019 — Mar 2021 · 1 yr 6 mos</div>
             </div>
             <div class="exp-description">
-              <p>Managed and planned all product development activities. Maintained and developed new features across backend and mobile platforms, directly owning the full lifecycle from concept to deployment.</p>
+              <p>Owned the full product development lifecycle from concept to deployment.</p>
+              <ul class="exp-bullets">
+                <li>Led planning and execution of product development activities across backend and mobile.</li>
+                <li>Built backend (Node.js, Hapi.js, MySQL, Docker, AWS) and mobile (Java, Kotlin, Retrofit, Firebase) features.</li>
+              </ul>
             </div>
             <div class="tech-stack" aria-label="Technologies used">
               <span class="badge">Node.js</span>
@@ -1001,9 +1049,12 @@
         </div>
 
         <div class="skill-card">
-          <div class="skill-category">Frameworks &amp; Runtimes</div>
+          <div class="skill-category">Backend &amp; API</div>
           <ul class="skill-list">
             <li class="skill-item">NestJS</li>
+            <li class="skill-item">GraphQL</li>
+            <li class="skill-item">Event-Driven Architecture</li>
+            <li class="skill-item">Microservices</li>
             <li class="skill-item">Hapi.js</li>
             <li class="skill-item">Vert.x / RxJava</li>
           </ul>
@@ -1020,10 +1071,11 @@
         </div>
 
         <div class="skill-card">
-          <div class="skill-category">Databases</div>
+          <div class="skill-category">Data &amp; Storage</div>
           <ul class="skill-list">
             <li class="skill-item">PostgreSQL</li>
             <li class="skill-item">MySQL</li>
+            <li class="skill-item">Redis</li>
             <li class="skill-item">DynamoDB</li>
           </ul>
         </div>
@@ -1037,10 +1089,21 @@
         </div>
 
         <div class="skill-card">
+          <div class="skill-category">Quality &amp; Monitoring</div>
+          <ul class="skill-list">
+            <li class="skill-item">SonarQube</li>
+            <li class="skill-item">Datadog</li>
+            <li class="skill-item">Dynatrace</li>
+            <li class="skill-item">Grafana</li>
+            <li class="skill-item">SignalFx / LogDNA</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
           <div class="skill-category">Leadership &amp; Process</div>
           <ul class="skill-list">
             <li class="skill-item">Technical Leadership</li>
-            <li class="skill-item">Microservices Architecture</li>
+            <li class="skill-item">Third-Party Integrations</li>
             <li class="skill-item">Code Review &amp; Mentorship</li>
             <li class="skill-item">Agile / Scrum</li>
           </ul>
@@ -1100,9 +1163,18 @@
         <div class="edu-card">
           <div class="edu-icon" aria-hidden="true">🎓</div>
           <div class="edu-body">
+            <div class="edu-institution">University of London</div>
+            <div class="edu-degree">BSc, Computer Science</div>
+            <div class="edu-period">In progress &middot; Started April 2026, expected 2030</div>
+          </div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-icon" aria-hidden="true">⚙️</div>
+          <div class="edu-body">
             <div class="edu-institution">Universidad Nacional de Ingeniería</div>
-            <div class="edu-degree">Mechanical engineering</div>
-            <div class="edu-period">Lima, Peru</div>
+            <div class="edu-degree">Mechanical Engineering</div>
+            <div class="edu-period">(Not completed) &middot; Lima, Peru</div>
           </div>
         </div>
 
@@ -1119,7 +1191,7 @@
           <div class="edu-icon" aria-hidden="true">💻</div>
           <div class="edu-body">
             <div class="edu-institution">Platzi</div>
-            <div class="edu-degree">Programming &amp; Software Development</div>
+            <div class="edu-degree">Development Program</div>
             <div class="edu-period">2017 – 2018</div>
           </div>
         </div>
@@ -1172,13 +1244,13 @@
           </div>
         </a>
 
-        <a href="https://linkedin.com/in/celsoespinoza-arce-4b78b8b7" target="_blank" rel="noopener" class="contact-card" aria-label="Celso's LinkedIn profile">
+        <a href="https://linkedin.com/in/celso-espinoza-arce-4b78b8b7" target="_blank" rel="noopener" class="contact-card" aria-label="Celso's LinkedIn profile">
           <div class="contact-icon" aria-hidden="true">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           </div>
           <div class="contact-body">
             <div class="contact-label">LinkedIn</div>
-            <div class="contact-value">celsoespinoza-arce</div>
+            <div class="contact-value">celso-espinoza-arce</div>
           </div>
         </a>
 
