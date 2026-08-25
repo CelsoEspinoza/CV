@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Claude Code: configuración local de esta máquina (permisos).
+# El skill en .claude/skills/ sí se versiona, para compartirlo.
+.claude/settings.local.json
+
+# Artefactos de Playwright MCP (snapshots y logs de consola)
+.playwright-mcp/
