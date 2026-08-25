@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Celso Roberto Espinoza Arce — CV</title>
+<style>
+  /* El margen de impresión lo aporta el padding del body; un margen aquí se sumaría a ese padding. */
+  @page { size: Letter; margin: 0; }
+
+  :root {
+    --navy: #1a2b4a;
+    --gray: #4a4a4a;
+    --light-gray: #6b6b6b;
+    --line: #c9ced6;
+    --dark: #1f1f1f;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: var(--gray);
+    max-width: 8.5in;
+    margin: 0 auto;
+    padding: 0.34in 0.6in;
+    font-size: 9.5pt;
+    line-height: 1.32;
+  }
+
+  h1 {
+    font-size: 20pt;
+    color: var(--navy);
+    margin: 0 0 2px 0;
+    font-weight: 700;
+  }
+
+  .role-title {
+    font-size: 11.5pt;
+    color: var(--gray);
+    margin: 0 0 4px 0;
+    font-weight: 400;
+  }
+
+  .contact {
+    font-size: 9pt;
+    color: var(--light-gray);
+    margin: 0 0 6px 0;
+  }
+
+  .contact a {
+    color: var(--light-gray);
+    text-decoration: none;
+  }
+
+  hr {
+    border: none;
+    border-top: 0.8px solid var(--line);
+    margin: 3px 0 6px 0;
+  }
+
+  h2.section {
+    font-size: 10.5pt;
+    color: var(--navy);
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin: 3px 0 4px 0;
+    font-weight: 700;
+  }
+
+  p.summary {
+    margin: 0 0 4px 0;
+    font-size: 9.5pt;
+    line-height: 1.34;
+  }
+
+  .job { margin-bottom: 4px; }
+
+  .job-title {
+    font-size: 10pt;
+    font-weight: 700;
+    color: var(--dark);
+    margin: 0;
+  }
+
+  .job-meta {
+    font-size: 8.5pt;
+    font-style: italic;
+    color: var(--light-gray);
+    margin: 0 0 2px 0;
+  }
+
+  ul.bullets {
+    margin: 0;
+    padding-left: 18px;
+  }
+
+  ul.bullets li {
+    font-size: 9.3pt;
+    line-height: 1.25;
+    margin-bottom: 1px;
+  }
+
+  table.skills {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 4px;
+  }
+
+  table.skills td {
+    vertical-align: top;
+    padding: 1px 0;
+    font-size: 9.3pt;
+  }
+
+  table.skills td.label {
+    font-weight: 700;
+    color: var(--dark);
+    width: 1.5in;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  .edu-item {
+    font-weight: 700;
+    color: var(--dark);
+    font-size: 9.5pt;
+    margin: 0 0 1px 0;
+  }
+
+  .edu-meta {
+    font-size: 8.7pt;
+    color: var(--light-gray);
+    margin: 0 0 4px 0;
+  }
+
+  .cert-line {
+    font-size: 9.3pt;
+    margin: 0;
+  }
+
+  .cert-line b { color: var(--dark); }
+
+  /* Editing affordance: subtle highlight on click/focus for contentEditable use */
+  [contenteditable="true"]:focus {
+    outline: 1px dashed #9aa7bd;
+    outline-offset: 2px;
+  }
+</style>
+</head>
+<body contenteditable="true" spellcheck="false">
+
+  <h1>Celso Roberto Espinoza Arce</h1>
+  <p class="role-title">Líder Técnico &amp; Desarrollo Backend</p>
+  <p class="contact">
+    Lima, Perú &nbsp;|&nbsp;
+    espinoza.arce13@gmail.com &nbsp;|&nbsp;
+    +51 995 742 585 &nbsp;|&nbsp;
+    linkedin.com/in/celso-espinoza-arce-4b78b8b7
+  </p>
+  <hr>
+
+  <h2 class="section">Perfil</h2>
+  <p class="summary">
+    Líder Técnico Backend con más de 8 años de experiencia construyendo y escalando sistemas backend,
+    recientemente liderando arquitecturas orientadas a eventos y basadas en plugins en Yape (BCP) sobre
+    NestJS/GraphQL. Sólida experiencia en microservicios, integraciones con terceros y liderazgo técnico
+    multidisciplinario. Actualmente cursando BSc en Ciencias de la Computación
+    (University of London) en paralelo al trabajo a tiempo completo.
+  </p>
+  <hr>
+
+  <h2 class="section">Experiencia</h2>
+
+  <div class="job">
+    <p class="job-title">Líder Técnico — Yape (BCP)</p>
+    <p class="job-meta">Lima, Perú &nbsp;|&nbsp; Enero 2024 – Agosto 2026</p>
+    <ul class="bullets">
+      <li>Diseñé un flujo orientado a eventos para el catálogo de promociones que automatizó la gestión del agotamiento de stock.</li>
+      <li>Lideré la migración de un BFF en NestJS/GraphQL hacia una arquitectura basada en plugins, mejorando la modularidad del producto.</li>
+      <li>Responsable de la integración con el partner de Yape Buses, construida sobre un framework interno para embeber experiencias web externas dentro de Yape, garantizando el manejo seguro de datos y una documentación técnica robusta.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <p class="job-title">Desarrollador Backend — Yape (BCP)</p>
+    <p class="job-meta">Lima, Perú &nbsp;|&nbsp; Junio 2023 – Enero 2024</p>
+    <ul class="bullets">
+      <li>Desarrollé un filtro de promociones por geolocalización que conecta a los usuarios con comercios cercanos mediante un CMS headless.</li>
+      <li>Mantuve y mejoré el producto de promociones a través de servicios backend en NestJS, GraphQL y PostgreSQL.</li>
+      <li>Colaboré con equipos multidisciplinarios para asegurar la integración y el correcto funcionamiento del sistema de promociones.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <p class="job-title">Desarrollador Backend — Lean Tech</p>
+    <p class="job-meta">Remoto &nbsp;|&nbsp; Mayo 2022 – Junio 2023</p>
+    <ul class="bullets">
+      <li>Contribuí al desarrollo de aplicaciones backend y apoyé la incorporación de nuevos integrantes en los estándares internos.</li>
+      <li>Mejoré la arquitectura del proyecto para cumplir con los requisitos de escalabilidad y los estándares modernos de ingeniería.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <p class="job-title">Desarrollador Backend — Rappi</p>
+    <p class="job-meta">Perú · Equipo Fraud-Ops &nbsp;|&nbsp; Abril 2021 – Mayo 2022</p>
+    <ul class="bullets">
+      <li>Mantuve y amplié la plataforma de backoffice web de la vertical de Fraude sobre una arquitectura de microservicios con Kotlin, Vert.x, RxJava, PostgreSQL y Kafka, junto con AWS SQS y DynamoDB.</li>
+      <li>Aseguré la calidad del código con Mockito y SonarQube; ejecuté CI/CD con Jenkins y monitoreé con SignalFx y LogDNA.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <p class="job-title">Líder del Equipo de Desarrollo de Producto — APPRUNN</p>
+    <p class="job-meta">Miraflores, Lima, Perú &nbsp;|&nbsp; Octubre 2019 – Marzo 2021</p>
+    <ul class="bullets">
+      <li>Lideré la planificación y ejecución de las actividades de desarrollo de producto en backend y mobile.</li>
+      <li>Desarrollé funcionalidades de backend (Node.js, Hapi.js, MySQL, Docker, AWS) y mobile (Java, Kotlin, Retrofit, Firebase).</li>
+    </ul>
+  </div>
+
+  <hr>
+
+  <h2 class="section">Habilidades Técnicas</h2>
+  <table class="skills">
+    <tr>
+      <td class="label">Lenguajes</td>
+      <td>TypeScript, JavaScript, Kotlin, Java</td>
+    </tr>
+    <tr>
+      <td class="label">Backend / API</td>
+      <td>Node.js, GraphQL, Microservicios, Arquitectura Orientada a Eventos, Clean Architecture</td>
+    </tr>
+    <tr>
+      <td class="label">Datos &amp; Mensajería</td>
+      <td>PostgreSQL, MySQL, Redis, Apache Kafka, DynamoDB</td>
+    </tr>
+    <tr>
+      <td class="label">Cloud &amp; DevOps</td>
+      <td>AWS, Azure Blob Storage, Docker, Jenkins, GitHub Actions, CI/CD</td>
+    </tr>
+    <tr>
+      <td class="label">Calidad &amp; Monitoreo</td>
+      <td>SonarQube, Datadog, Dynatrace, SignalFx, LogDNA, Grafana</td>
+    </tr>
+  </table>
+  <hr>
+
+  <h2 class="section">Educación</h2>
+  <p class="edu-item">Bachillerato en Ciencias de la Computación — University of London</p>
+  <p class="edu-meta">En curso · Inicio abril 2026, finalización estimada 2030</p>
+  <p class="edu-item">AWS Solutions Architect Associate — BSG Institute (2020)</p>
+  <p class="edu-item" style="margin-bottom:6px;">Programa de Desarrollo — Platzi (2017 – 2018)</p>
+  <hr>
+
+  <h2 class="section">Certificaciones e Idiomas</h2>
+  <p class="cert-line">
+    <b>Certificaciones:</b> Cambridge English B2 First &nbsp;&nbsp;|&nbsp;&nbsp;
+    <b>Idiomas:</b> Español (Nativo), Inglés (Profesional)
+  </p>
+
+</body>
+</html>

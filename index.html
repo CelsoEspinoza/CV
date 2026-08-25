@@ -245,7 +245,7 @@
       text-transform: uppercase;
       padding: 12px 24px;
       border-radius: var(--radius-sm);
-      border: none;
+      border: 1px solid transparent;
       cursor: pointer;
       transition: background 0.2s, transform 0.15s;
       text-decoration: none;
@@ -253,6 +253,17 @@
     .btn-primary:hover {
       background: var(--gold-light);
       transform: translateY(-1px);
+    }
+    /* Second language: same size and hierarchy as .btn-primary with an inverted fill,
+       so the two downloads stay distinguishable without either dominating. */
+    .btn-primary.btn-alt {
+      background: transparent;
+      color: var(--gold);
+      border-color: var(--gold);
+    }
+    .btn-primary.btn-alt:hover {
+      background: rgba(201, 168, 76, 0.12);
+      color: var(--gold-light);
     }
     .btn-secondary {
       display: inline-flex;
@@ -770,7 +781,8 @@
         <a href="#skills">Skills</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
-        <a href="CV.pdf" target="_blank" rel="noopener" class="nav-cta">Download CV</a>
+        <a href="cv.en.pdf" target="_blank" rel="noopener" hreflang="en" class="nav-cta" aria-label="Download CV in English (PDF)">CV EN</a>
+        <a href="cv.es.pdf" target="_blank" rel="noopener" hreflang="es" class="nav-cta" aria-label="Descargar CV en español (PDF)">CV ES</a>
       </div>
     </div>
   </nav>
@@ -791,9 +803,13 @@
         integrations, and cross-functional technical leadership.
       </p>
       <div class="hero-actions">
-        <a href="CV.pdf" target="_blank" rel="noopener" class="btn-primary">
+        <a href="cv.en.pdf" target="_blank" rel="noopener" hreflang="en" class="btn-primary">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Download CV
+          Download CV (EN)
+        </a>
+        <a href="cv.es.pdf" target="_blank" rel="noopener" hreflang="es" class="btn-primary btn-alt">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Descargar CV (ES)
         </a>
         <a href="#contact" class="btn-secondary">Get in Touch</a>
       </div>
@@ -1254,13 +1270,22 @@
           </div>
         </a>
 
-        <a href="CV.pdf" target="_blank" rel="noopener" class="contact-card" aria-label="Download CV PDF">
+        <a href="cv.en.pdf" hreflang="en" target="_blank" rel="noopener" class="contact-card" aria-label="Download CV in English (PDF)">
           <div class="contact-icon" aria-hidden="true">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
           </div>
           <div class="contact-body">
             <div class="contact-label">Resume</div>
-            <div class="contact-value">Download PDF</div>
+            <div class="contact-value">English PDF</div>
+          </div>
+        </a>
+        <a href="cv.es.pdf" hreflang="es" target="_blank" rel="noopener" class="contact-card" aria-label="Descargar CV en español (PDF)">
+          <div class="contact-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <div class="contact-body">
+            <div class="contact-label">Currículum</div>
+            <div class="contact-value">PDF en español</div>
           </div>
         </a>
 
